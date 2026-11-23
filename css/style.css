@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .div-logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.header .div-logo .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" -25;
+  font-size: 5rem;
+  color: #1F4D3A;
+  transition: all 0.5s ease-in-out;
+}
+.header .div-logo a {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #1F4D3A;
+  transition: all 0.5s ease-in-out;
+}
+.header .div-logo:hover .material-symbols-outlined {
+  color: rgba(40, 123, 162, 0.5);
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" -25;
+}
+.header .div-nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header .div-nav .nav {
+  display: flex;
+  align-items: center;
+}
+.header .div-nav .nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+.header .div-nav .nav ul li {
+  list-style-type: none;
+}
+.header .div-nav .nav ul li a {
+  text-decoration: none;
+  color: #287ca2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-top: 2px solid transparent;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.header .div-nav .nav ul li a:hover {
+  border-top: 2px solid rgba(40, 123, 162, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-flotante {
+  position: relative;
+}
+.btn-flotante button {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 0;
+  background: transparent;
+  border: none;
+}
+.btn-flotante button a .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 2px 3px rgb(40, 123, 162);
+  transition: all 0.2s ease-in-out;
+}
+.btn-flotante button a .material-symbols-outlined:hover {
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .s-hero {
+  position: relative;
+  height: 39rem;
+  width: 100%;
+}
+.main .s-hero .hero-img {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "i1 i1 i2" "i3 i4 i5" "i6 i7 i7";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 13rem);
+}
+.main .s-hero .hero-img .i1 {
+  grid-area: i1;
+}
+.main .s-hero .hero-img .i2 {
+  grid-area: i2;
+}
+.main .s-hero .hero-img .i3 {
+  grid-area: i3;
+}
+.main .s-hero .hero-img .i4 {
+  grid-area: i4;
+}
+.main .s-hero .hero-img .i5 {
+  grid-area: i5;
+}
+.main .s-hero .hero-img .i6 {
+  grid-area: i6;
+}
+.main .s-hero .hero-img .i7 {
+  grid-area: i7;
+}
+.main .s-hero .hero-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.main .s-hero .hero-titulo {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: rgba(40, 123, 162, 0.3);
+}
+.main .s-hero .hero-titulo .div-titulo {
+  text-align: center;
+  color: white;
+  transition: all 1s ease-in-out;
+  text-shadow: 1px 2px 2px rgba(40, 123, 162, 0.8);
+}
+.main .s-hero .hero-titulo .div-titulo h1 {
+  font-size: 4.2rem;
+  font-weight: 800;
+}
+.main .s-hero .hero-titulo .div-titulo h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main .s-hero .hero-titulo .div-accion {
+  display: flex;
+  gap: 2rem;
+}
+.main .s-hero .hero-titulo .div-accion button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main .s-hero .hero-titulo .div-accion button a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.main .s-hero .hero-titulo .div-accion button a .material-symbols-outlined {
+  font-size: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .s-hero .hero-titulo .div-accion button {
+  border: 5px solid white;
+  border-radius: 0.5rem;
+  background: rgba(40, 123, 162, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.main .s-hero .hero-titulo .div-accion button:hover {
+  transform: scale(0.98);
+}
+.main .s-confianza {
+  padding: 6rem;
+  display: grid;
+  grid-template-areas: "c1 c2 c3 c4";
+  grid-template-columns: 1fr 1.5fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  background: rgba(40, 123, 162, 0.1);
+}
+.main .s-confianza .c1 {
+  grid-area: c1;
+  background-image: url("/img/alex-wolowiecki-Zf2mL1gtaVg-unsplash.jpg");
+  background-position-y: 100%;
+  background-size: cover;
+}
+.main .s-confianza .c2 {
+  grid-area: c2;
+  background-image: url("/img/ed-wingate-332IgTi6J5s-unsplash.webp");
+  background-size: cover;
+  background-position-y: 100%;
+}
+.main .s-confianza .c3 {
+  grid-area: c3;
+  background-image: url("/img/chandan-chaurasia-z32bIS5O1KQ-unsplash.webp");
+  background-size: cover;
+  background-position-y: 80%;
+}
+.main .s-confianza .c4 {
+  grid-area: c4;
+  background-image: url("/img/humberto-lima-8TBJDtmheno-unsplash.jpg");
+  background-position-y: 60%;
+  background-size: cover;
+}
+.main .s-confianza .div-c {
+  padding: 1rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+}
+.main .s-confianza .div-c .num {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.main .s-confianza .div-c .indicador {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .s-confianza .div-c .c-img {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+}
+.main .s-confianza .div-c .c-img .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" -24;
+  font-size: 5rem;
+}
+.main .s-confianza .certificaciones {
+  justify-content: end;
+}
+.main .s-destacados {
+  padding: 6rem 4rem 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background: rgba(40, 123, 162, 0.2);
+}
+.main .s-destacados .div-titulo h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(40, 123, 162, 0.8);
+}
+.main .s-destacados .carousel {
+  --visible: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main .s-destacados .carousel .carousel-btn {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.main .s-destacados .carousel .carousel-btn .material-symbols-outlined {
+  font-size: 3rem;
+  color: rgba(40, 123, 162, 0.5);
+}
+.main .s-destacados .carousel .carousel-viewport {
+  overflow: hidden;
+  width: calc(var(--visible) * 30rem + (var(--visible) - 1) * 2rem);
+  max-width: 100%;
+}
+.main .s-destacados .carousel .div-cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.main .s-destacados .carousel .div-cards .card {
+  flex: 0 0 30rem;
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+.main .s-destacados .carousel .div-cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  border-radius: 1rem 0 0 1rem;
+}
+.main .s-destacados .carousel .div-cards .card .card-text {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .s-destacados .carousel .div-cards .card .card-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(40, 123, 162, 0.2);
+}
+.main .s-destacados .carousel .div-cards .card .card-text p {
+  font-size: 1rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.main .sec-eligenos {
+  position: relative;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .sec-eligenos .div-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  height: 100%;
+}
+.main .sec-eligenos .div-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 10%;
+     object-position: 0 10%;
+  height: 100%;
+  width: 100%;
+}
+.main .sec-eligenos .div-texto {
+  padding: 4rem;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.main .sec-eligenos .div-texto .div-titulo h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(40, 123, 162, 0.8);
+}
+.main .sec-eligenos .div-texto .div-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.main .sec-eligenos .div-texto .div-info p {
+  background: rgba(40, 123, 162, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+.main .sec-eligenos .div-texto .div-info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main .sec-eligenos .div-texto .div-info ul li {
+  background: rgba(40, 123, 162, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: justify;
+  list-style-type: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.main .s-tours {
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.main .s-tours .div-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .s-tours .div-titulo h2 {
+  font-size: 4rem;
+  color: rgba(40, 123, 162, 0.8);
+  text-shadow: 1px 2px 3px white;
+}
+.main .s-tours .div-cards {
+  display: flex;
+  gap: 2rem;
+}
+.main .s-tours .div-cards .card-tour {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.main .s-tours .div-cards .card-tour img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.main .s-tours .div-cards .card-tour .card-texto {
+  background: rgba(40, 123, 162, 0.2);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-titulo {
+  border-bottom: 1px solid rgba(40, 123, 162, 0.2);
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-titulo h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-info ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-descrip {
+  border-top: 1px solid rgba(40, 123, 162, 0.2);
+  padding-top: 1rem;
+}
+.main .s-tours .div-cards .card-tour .card-texto .card-descrip p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+.main .s-reserva {
+  position: relative;
+  height: 38rem;
+}
+.main .s-reserva .div-img {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+.main .s-reserva .div-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.main .s-reserva .div-info {
+  padding: 6rem 4rem;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: grid;
+  grid-template-areas: "titulo form";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 3rem;
+}
+.main .s-reserva .div-info .div-titulo {
+  grid-area: titulo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main .s-reserva .div-info .div-titulo h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(40, 123, 162, 0.8);
+}
+.main .s-reserva .div-info .div-titulo p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+.main .s-reserva .div-info .div-form {
+  grid-area: form;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .s-reserva .div-info .div-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main .s-reserva .div-info .div-form form input, .main .s-reserva .div-info .div-form form select, .main .s-reserva .div-info .div-form form button {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: rgba(40, 123, 162, 0.8);
+  color: white;
+  font-size: 1.2rem;
+}
+.main .s-reserva .div-info .div-form form input::-moz-placeholder, .main .s-reserva .div-info .div-form form select::-moz-placeholder, .main .s-reserva .div-info .div-form form button::-moz-placeholder {
+  color: white;
+  font-size: 1.2rem;
+}
+.main .s-reserva .div-info .div-form form input::placeholder, .main .s-reserva .div-info .div-form form select::placeholder, .main .s-reserva .div-info .div-form form button::placeholder {
+  color: white;
+  font-size: 1.2rem;
+}
+.main .s-reserva .div-info .div-form form button {
+  background: rgb(40, 123, 162);
+}
+.main .s-reserva .div-info .div-form form select, .main .s-reserva .div-info .div-form form ::picker(select) {
+  -webkit-appearance: base-select;
+     -moz-appearance: base-select;
+          appearance: base-select;
+  border-radius: 0.5rem;
+  border: none;
+}
+.main .s-reserva .div-info .div-form form input:focus {
+  outline: none;
+}
+.main .s-reserva .div-info .div-form form option {
+  background: rgba(40, 123, 162, 0.2);
+  color: white;
+  padding: 1rem;
+}
+.main .s-reserva .div-info .div-form form option:hover, .main .s-reserva .div-info .div-form form option:checked {
+  background-color: rgba(40, 123, 162, 0.5);
+}
+.main .s-nosotros {
+  padding: 6rem 4rem;
+  display: grid;
+  grid-template-areas: "titulo nosotros";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.main .s-nosotros .div-titulo {
+  grid-area: titulo;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.main .s-nosotros .div-titulo h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(40, 123, 162, 0.8);
+}
+.main .s-nosotros .div-nosotros {
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.main .s-nosotros .div-nosotros p {
+  background: rgba(40, 123, 162, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.main .s-opiniones {
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background: rgba(40, 123, 162, 0.1);
+}
+.main .s-opiniones .div-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .s-opiniones .div-titulo h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(40, 123, 162, 0.8);
+}
+.main .s-opiniones .div-cards {
+  display: flex;
+  gap: 2rem;
+}
+.main .s-opiniones .div-cards .card-cliente {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: white;
+  padding: 1rem;
+}
+.main .s-opiniones .div-cards .card-cliente .card-titulo {
+  border-bottom: 1px solid rgba(40, 123, 162, 0.2);
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main .s-opiniones .div-cards .card-cliente .card-titulo .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" -25, "opsz" 24;
+  font-size: 3rem;
+  border-radius: 100%;
+  background: rgba(40, 123, 162, 0.5);
+  color: white;
+}
+.main .s-opiniones .div-cards .card-cliente .card-titulo h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.main .s-opiniones .div-cards .card-cliente .card-descrip {
+  padding-top: 1rem;
+}
+.main .s-opiniones .div-cards .card-cliente .card-descrip p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+.footer {
+  padding: 4rem;
+  display: grid;
+  grid-template-areas: "f-2 f-3 f-1 f-4";
+  grid-template-columns: 1fr 1fr 2fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+.footer .f-1 {
+  grid-area: f-1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .f-1 p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(40, 123, 162);
+  text-align: end;
+}
+.footer .f-2 {
+  grid-area: f-2;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+.footer .f-2 h4 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgb(40, 123, 162);
+  color: rgb(40, 123, 162);
+}
+.footer .f-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer .f-2 ul li {
+  list-style-type: none;
+}
+.footer .f-2 ul li a {
+  text-decoration: none;
+  color: rgb(40, 123, 162);
+}
+.footer .f-3 {
+  grid-area: f-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+.footer .f-3 h4 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgb(40, 123, 162);
+  color: rgb(40, 123, 162);
+}
+.footer .f-3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer .f-3 ul li {
+  list-style-type: none;
+}
+.footer .f-3 ul li a {
+  text-decoration: none;
+  color: rgb(40, 123, 162);
+}
+.footer .f-4 {
+  grid-area: f-4;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer .f-4 a .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" -25, "opsz" 24;
+  font-size: 10rem;
+  color: rgba(40, 123, 162, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+.footer .f-4 a .material-symbols-outlined:hover {
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" -25, "opsz" 24;
+  color: rgba(40, 123, 162, 0.8);
+}/*# sourceMappingURL=style.css.map */

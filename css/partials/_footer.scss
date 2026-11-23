@@ -1,0 +1,103 @@
+.footer{
+    padding: 4rem;
+    display: grid;
+    grid-template-areas: "f-2 f-3 f-1 f-4";
+    grid-template-columns: 1fr 1fr 2fr .5fr;
+    grid-template-rows: 1fr;
+
+    .f-1{
+        grid-area: f-1;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: rgba(40, 123, 162);
+            text-align: end;
+        }
+    }
+    .f-2{
+        grid-area: f-2;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+
+        h4{
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(40, 123, 162);
+            color: rgba(40, 123, 162);
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: rgba(40, 123, 162);
+                }
+            }
+        }
+    }
+
+    .f-3{
+        grid-area: f-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+
+        h4{
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(40, 123, 162);
+            color: rgba(40, 123, 162);
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: rgba(40, 123, 162);
+                }
+            }
+        }
+        
+    }
+    .f-4{
+        grid-area: f-4;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        a{
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 100,
+              'GRAD' -25,
+              'opsz' 24;
+              font-size: 10rem;
+              color: rgba(40, 123, 162, .8);
+              transition: all .5s ease-in-out;
+              
+              &:hover{
+                  font-variation-settings:
+                  'FILL' 1,
+                  'wght' 100,
+                  'GRAD' -25,
+                  'opsz' 24;
+                  color: rgba(40, 123, 162, .8);
+
+              }
+            }
+            
+        }
+    }
+}
